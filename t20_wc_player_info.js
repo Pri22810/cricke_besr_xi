@@ -1,4 +1,4 @@
-/* -------------- STAGE 1 ------------ */
+
 
 //------- 1.a Interaction Code ------ //
 
@@ -22,7 +22,7 @@ return {
   'matchSummaryLinks': links
 };
 
-/* ------------ STAGE 2 -------------- */
+
 
 //------- 2.a Interaction Code ------ //
 navigate(input.url);
@@ -110,7 +110,7 @@ secondInningsRows.each((index, element) => {
 return {"playersData": playersLinks}
  
  
-/* ------------- STAGE 3 ------------ */
+
 
 //------- 3.a Interaction Code ------ //
 
