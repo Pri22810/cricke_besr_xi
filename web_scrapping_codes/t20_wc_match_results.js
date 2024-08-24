@@ -1,6 +1,4 @@
-/* -------------- STAGE 1 ------------ */
 
-//------- 1.a Interaction Code ------ //
 
 navigate('https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?id=14450;type=tournament');
 collect(parse());
@@ -8,16 +6,15 @@ collect(parse());
 
 
 
-//------- 1.b Parser Code ------------//
-//Step1: create an array to store all the records
+
 let matchSummary = []
 
-//Step2: Selecting all rows we need from target table
+
 const allRows = $('table.engineTable > tbody > tr.data1');
 
-//Step3: Looping through each rows and get the data from the cells(td)
+
  allRows.each((index, element) => {
- 		const tds = $(element).find('td');   //find the td
+ 		const tds = $(element).find('td');   
 		matchSummary.push({
               'team1':  $(tds[0]).text(),
               'team2':  $(tds[1]).text(),
