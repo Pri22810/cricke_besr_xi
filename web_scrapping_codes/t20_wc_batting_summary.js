@@ -1,4 +1,4 @@
-
+// interaction code stage 1
 
 
 navigate('https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?id=14450;type=tournament');
@@ -9,7 +9,7 @@ for(let i of links) {
   next_stage({url: i}) 
 }
 
-
+// parser code stage 1
 let links = []
 const allRows = $('table.engineTable > tbody > tr.data1');
  allRows.each((index, element) => {
@@ -23,10 +23,10 @@ return {
 
 
 
-
+// interaction code stage 2
 navigate(input.url);
 collect(parse());
-
+// parser code stage 2
 
 var match = $('div').filter(function(){
 	return $(this)
