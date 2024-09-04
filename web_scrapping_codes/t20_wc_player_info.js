@@ -1,4 +1,4 @@
-
+// interaction code stage1
 
 navigate('https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?id=14450;type=tournament');
 
@@ -8,7 +8,7 @@ for(let i of links) {
 }
 
 
-
+//parser code stage1
 let links = []
 const allRows = $('table.engineTable > tbody > tr.data1');
  allRows.each((index, element) => {
@@ -19,8 +19,7 @@ const allRows = $('table.engineTable > tbody > tr.data1');
 return {
   'matchSummaryLinks': links
 };
-
-
+// intyeraction code stage 2
 navigate(input.url);
 
 
@@ -32,7 +31,7 @@ for(let obj of playersData) {
   next_stage({name: name, team: team, url: url}) 
 }
 
-
+//parser code stage 2
 var playersLinks = []
 
 var match = $('div').filter(function(){
