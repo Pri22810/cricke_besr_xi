@@ -1,6 +1,7 @@
 # Best 12 Cricket Players Based on T20 World Cup 2022 Records 
 
-__Description__
+**Description**
+
 This project aims to select the best 12 cricket players based on their performance in the T20 World Cup 2022. The selection is made through comprehensive data analysis, including web scraping, data cleaning, and visualization techniques. The analysis covers various player positions such as opener, anchor, middle order, lower middle order, finishers, and fast bowlers.
 This is an analytical report to create a team that can defend 150 runs and make 180 runs. The analysis provides a data-driven approach to selecting the optimal players for different scenarios and match situations.
 
